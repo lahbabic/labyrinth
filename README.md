@@ -1,19 +1,13 @@
-Projet info L2PCP 2016 by Lahbabi Chems Eddine
-
-
-Pour compiler tous les modules:
+To compile:
 make install
 
-Pour tester avec les 2 labyrinthes par defaut BFS:
+To test with 2 default laby using BFS method:
 make exec
 
-Pour Dijkstra:
-make exec_dij
-
-faire "./test_module --help" pour plus d'information
+Try "./test_module --help" for more information
 
 
 
 #######################################
-Dijkstra n'est pas finit.
-tester sous Debian Jessie amd64
+
+tested on Debian Jessie amd64
