@@ -7,7 +7,6 @@ m_init.o: m_init.c m_init.h
 
 install: m_init.o m_init.h
 	cp -v m_init.o ../lib
-	cp -v m_init.h ../include
 
 clean:
 	rm m_init.o
