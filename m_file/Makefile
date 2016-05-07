@@ -6,7 +6,6 @@ m_file.o: m_file.c m_file.h
 
 install: m_file.o m_file.h
 	cp -v m_file.o ../lib
-	cp -v m_file.h ../include
 
 clean:
 	rm m_file.o
