@@ -28,6 +28,12 @@ test_module: test_module.c m_file m_dijkstra m_affich m_bfs m_f_exit
 	gcc $(FLAGS) -o $@ $< -I include lib/* 
 
 incl:
+	if [ ! -d "./include" ]; then\
+		mkdir include;\
+	fi
+	if [ ! -d "./lib" ]; then\
+		mkdir lib;\
+	fi
 	cp -rf m_file/*.h include
 	cp -rf laby/*.h include
 	cp -rfv m_affich/*.h include
@@ -37,7 +43,6 @@ incl:
 	cp -rf m_dijkstra/*.h include
 
 install: incl test_module
-
 
 test: 
 	./test_module -f m_file/graph.txt -s 0x0 -e 3x7 -z 4x8 -m BFS
