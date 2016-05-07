@@ -6,7 +6,6 @@ laby.o: laby.c laby.h
 
 install: laby.o laby.h
 	cp -v laby.o ../lib
-	cp -v laby.h ../include
 
 clean:
 	rm laby.o
