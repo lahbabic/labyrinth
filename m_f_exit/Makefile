@@ -8,7 +8,6 @@ m_f_exit.o: m_f_exit.c m_f_exit.h
 
 install: m_f_exit.o m_f_exit.h
 	cp -v m_f_exit.o ../lib
-	cp -v m_f_exit.h ../include
 
 clean:
 	rm m_f_exit.o
