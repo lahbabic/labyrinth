@@ -8,7 +8,5 @@ m_affich.o: m_affich.c m_affich.h
 
 install: m_affich.o m_affich.h
 	cp -v m_affich.o ../lib
-	cp -v m_affich.h ../include
-
 clean:
 	rm m_affich.o
