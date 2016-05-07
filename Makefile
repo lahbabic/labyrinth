@@ -1,17 +1,18 @@
-.PHONY: m_affich m_f_exit m_dijkstra laby m_file m_init m_bfs test_module clean
+.PHONY: incl m_affich m_f_exit m_dijkstra laby m_file m_init m_bfs test_module clean
 FLAGS=-DUSECOLORS -Wall -g -DPRODUCTION
 
 
 laby:
+
 	cd laby && make install && cd ..
 	
-m_affich:
+m_affich: m_bfs m_f_exit
 	cd m_affich && make install && cd ..
 
-m_file: laby
+m_file: laby m_init
 	cd m_file && make install && cd ..
 
-m_init: m_file
+m_init: 
 	cd m_init && make install && cd ..
 
 m_bfs:
@@ -23,10 +24,21 @@ m_f_exit:
 m_dijkstra:
 	cd m_dijkstra && make install && cd ..
 
-test_module: test_module.c m_init m_dijkstra m_affich m_bfs m_f_exit 
+test_module: test_module.c m_file m_dijkstra m_affich m_bfs m_f_exit 
 	gcc $(FLAGS) -o $@ $< -I include lib/* 
 
-install: test_module
+incl:
+	cp -rf m_file/*.h include
+	cp -rf laby/*.h include
+	cp -rfv m_affich/*.h include
+	cp -rf m_bfs/*.h include
+	cp -rf m_init/*.h include
+	cp -rf m_f_exit/*.h include
+	cp -rf m_dijkstra/*.h include
+
+install: incl test_module
+
+
 test: 
 	./test_module -f m_file/graph.txt -s 0x0 -e 3x7 -z 4x8 -m BFS
 test1:
@@ -45,7 +57,8 @@ clean:
 	cd m_dijkstra && make clean && cd ..
 	cd m_bfs && make clean && cd ..
 	rm test_module
-
+	cd include && rm * && cd ..
+	cd lib && rm * && cd ..
 create_sauv:
 	cd .. & mkdir sauv_laby
 
