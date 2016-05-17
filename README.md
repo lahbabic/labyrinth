@@ -1,7 +1,7 @@
 To compile:
 make install
 
-To test with 2 default laby using BFS method:
+To test with 2 default laby using BFS(breadth first search) algorithm:
 make exec
 
 Try "./test_module --help" for more information
@@ -10,4 +10,4 @@ Try "./test_module --help" for more information
 
 #######################################
 
-tested on Debian Jessie amd64
+tested on Debian 
