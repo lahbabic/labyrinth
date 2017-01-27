@@ -9,5 +9,3 @@ Try "./test_module --help" for more information
 
 
 #######################################
-
-tested on Debian 
