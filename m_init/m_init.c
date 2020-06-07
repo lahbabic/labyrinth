@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/laby.h"
+#include "../laby/laby.h"
 #include "m_init.h"
-#include "../include/m_file.h"
+#include "../m_file/m_file.h"
 
 #define Cred  "\x1B[31m"
 #define Cwhite  "\x1B[37m"

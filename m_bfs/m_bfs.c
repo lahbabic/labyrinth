@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/m_init.h"
+#include "../m_init/m_init.h"
 #include "m_bfs.h"
 
 

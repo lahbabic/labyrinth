@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "../include/m_init.h"
-#include "../include/m_bfs.h"
-#include "../include/m_f_exit.h"
+#include "../m_init/m_init.h"
+#include "../m_bfs/m_bfs.h"
+#include "../m_f_exit/m_f_exit.h"
 #include "m_affich.h"
 
 

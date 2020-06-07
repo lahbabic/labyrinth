@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "m_file.h"
-#include "../include/m_init.h"
+#include "../m_init/m_init.h"
 
 char 		*remem_t(char *p, int i);
 char 		**remem_tt(char **x, int i);

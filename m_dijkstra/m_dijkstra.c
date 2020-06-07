@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "m_dijkstra.h"
-#include "m_file.h"
-#include "laby.h"
-#include "m_init.h"
+#include "../m_file/m_file.h"
+#include "../laby/laby.h"
+#include "../m_init/m_init.h"
 
 int			**remem_tt_int(int **x, int i);
 int 		*remem_t_int(int *p, int i);

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/m_affich.h"
-#include "../include/m_bfs.h"
-#include "../include/m_init.h"
+#include "../m_affich/m_affich.h"
+#include "../m_bfs/m_bfs.h"
+#include "../m_init/m_init.h"
 #include "m_f_exit.h"
 
 typedef void *dont_know_type;

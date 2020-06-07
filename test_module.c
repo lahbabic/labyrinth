@@ -3,13 +3,13 @@
 #include <string.h>
 #include <unistd.h>
 #include <getopt.h>
-#include "include/laby.h"
-#include "include/m_init.h"
-#include "include/m_file.h"
-#include "include/m_affich.h"
-#include "include/m_bfs.h"
-#include "include/m_f_exit.h"
-#include "m_dijkstra.h"
+#include "laby/laby.h"
+#include "m_init/m_init.h"
+#include "m_file/m_file.h"
+#include "m_affich/m_affich.h"
+#include "m_bfs/m_bfs.h"
+#include "m_f_exit/m_f_exit.h"
+#include "m_dijkstra/m_dijkstra.h"
 
 
 void 			BFS(char *size, char *file_name, char *O, char *E);
